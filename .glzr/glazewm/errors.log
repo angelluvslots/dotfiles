@@ -9,3 +9,7 @@
 [2m2025-01-08T07:55:35.463399Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: The operation was canceled by the user. (0x800704C7)"
 [2m2025-01-08T07:58:03.080434Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
 [2m2025-01-10T20:44:53.819149Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-14T19:47:46.402731Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-14T22:11:29.094340Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-14T22:11:40.332725Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-14T22:53:25.364552Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '7' doesn't exist or is already active.

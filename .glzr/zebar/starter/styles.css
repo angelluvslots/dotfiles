@@ -3,36 +3,16 @@
  * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
  */
 @import 'https://www.nerdfonts.com/assets/css/webfont.css';
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
 
 :root {
-  --rosewater: #f5e0dc;
-  --flamingo: #f2cdcd;
-  --pink: #f5c2e7;
-  --mauve: #cba6f7;
-  --red: #ed8796;
-  --yellow: #f9e2af;
-  --teal: #94e2d5;
-  --text: #cdd6f4;
-  --overlay-2: #9399b2;
-  --overlay-1: #7f849c;
-  --overlay-0: #6c7086;
-  --surface-1: #45475a;
-  --surface-0: #313244;
-  --base: #1e1e2e;
-  --mantle: #181825;
-  --crust: #11111b;
   --brad: 0.25rem;
-  font-size: 16px;
-}
-
-i {
-  margin-right: 0.5rem;
-}
-
-body {
-  color: var(--pink);
-  font-family: "JetBrainsMono Nerd Font Propo";
+  --trans: 0.25s;
   overflow: hidden;
+  font-size: 16px;
+  font-family: "JetBrainsMono Nerd Font Propo";
+  color: var(--ctp-mocha-pink);
+  background-color: rgba(var(--ctp-mocha-base-rgb) / 75%);
 }
 
 :root,
@@ -41,8 +21,52 @@ body,
   height: 100%;
 }
 
-#root {
-  background-color: var(--base);
+.nf {
+  margin-right: 0.75rem;
+  &.no-margin {
+    margin-right: 0;
+  }
+}
+
+.button {
+  background: transparent;
+  height: 1.5rem;
+  cursor: pointer;
+  border: 0;
+  color: var(--ctp-surface0);
+  transition: color var(--trans);
+  &:hover {
+    color: var(--ctp-mocha-pink);
+  }
+}
+
+.button-bg .button {
+  transition: transform var(--trans);
+}
+
+.button-bg:hover .button {
+  color: var(--ctp-mocha-surface0);
+  transform: scale(75%);
+  &:hover {
+    transform: scale(100%);
+  }
+}
+
+.button-bg {
+  height: 1.5rem;
+  border: 0;
+  border-radius: var(--brad);
+  color: var(--ctp-mocha-pink);
+  background: var(--ctp-mocha-surface0);
+  transition: background var(--trans);
+  &:hover {
+    color: var(--ctp-mocha-surface0);
+    background: var(--ctp-mocha-pink);
+  }
+}
+
+.separator {
+  font-size: 125%;
 }
 
 .app {
@@ -50,6 +74,7 @@ body,
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   height: 100%;
+  color: var(--ctp-mocha-pink);
 }
 
 .left,
@@ -67,7 +92,30 @@ body,
 
 .right {
   justify-self: end;
-  color: var(--pink);
+}
+
+.media .nf {
+  font-size: 75%;
+}
+
+.media {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.media-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.process-name {
+  color: var(--ctp-mocha-overlay0);
+  transition: color var(--trans);
+  &.focused {
+    color: var(--ctp-mocha-pink);
+  }
 }
 
 .workspaces {
@@ -76,29 +124,39 @@ body,
   gap: 0.25rem;
 }
 
-.workspace i {
-  margin: 0;
+.workspace .nf {
+  font-size: 125%;
 }
 
 .workspace {
   padding: 0;
   background: transparent;
-  color: var(--overlay-0);
+  color: var(--ctp-mocha-overlay0);
   border: none;
   border-radius: var(--brad);
   cursor: pointer;
-
+  transition: transform var(--trans);
   &.focused,
   &:hover {
-    color: var(--pink);
+    transform: scale(125%);
   }
 }
 
-.tiling-direction {
-  background: var(--surface-0);
-  color: var(--pink);
-  border-radius: var(--brad);
-  line-height: 1;
-  border: 0;
-  cursor: pointer;
+.workspace-color[workspaceName="1"] {
+  color: var(--ctp-mocha-pink);
+}
+.workspace-color[workspaceName="2"] {
+  color: var(--ctp-mocha-mauve);
+}
+.workspace-color[workspaceName="3"] {
+  color: var(--ctp-mocha-teal);
+}
+.workspace-color[workspaceName="4"] {
+  color: var(--ctp-mocha-yellow);
+}
+.workspace-color[workspaceName="5"] {
+  color: var(--ctp-mocha-maroon);
+}
+.workspace-color[workspaceName="6"] {
+  color: var(--ctp-mocha-green);
 }
