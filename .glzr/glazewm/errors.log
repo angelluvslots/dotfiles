@@ -1,0 +1,11 @@
+[2m2025-01-08T06:47:42.545410Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2025-01-08T07:31:29.348444Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2025-01-08T07:32:47.272855Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-08T07:32:57.401571Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-08T07:54:17.206789Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2025-01-08T07:55:08.956231Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-08T07:55:13.707087Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-08T07:55:20.072540Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-08T07:55:35.463399Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zebar'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2025-01-08T07:58:03.080434Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-10T20:44:53.819149Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.

@@ -1,0 +1,15 @@
+[credential "helperselector"]
+	selected = manager
+[user]
+	email = vvoid127@gmail.com
+	name = finndotbin
+[init]
+	defaultBranch = main
+[alias]
+	stat = status
+	com = commit -m
+	all = add -A
+	files = ls-tree -r main --name-only
+	swap = checkout -
+[push]
+	autoSetupRemote = true
