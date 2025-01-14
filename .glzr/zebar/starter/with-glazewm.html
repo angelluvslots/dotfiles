@@ -121,7 +121,11 @@
                       onClick={async () => await output.media.next()}
                     ></button>
                   </div>
-                  {output.media.currentSession.artist?.toLowerCase()} - {output.media.currentSession.title?.toLowerCase()}
+                  <div className="media-artist">
+                    {output.media.currentSession.artist?.toLowerCase()}
+                  </div> - <div className="media-title">
+                    {output.media.currentSession.title?.toLowerCase()}
+                  </div>
                 </div>
               />)}
             </div>
@@ -162,7 +166,7 @@
               />)}
               {output.date && (<Mod elem=
                 <div className="time">
-                  <i className="nf nf-md-clock"></i>
+                  <i className="nf nf-oct-clock"></i>
                   {output.date.formatted.split('|')[1].toLowerCase()}
                 </div>
               />)}
