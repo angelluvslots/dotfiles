@@ -1,0 +1,26 @@
+.app {
+  padding: 0.5rem 0.75rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.left,
+.center,
+.right {
+  width: fit-content;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: var(--brad);
+}
+
+.center {
+  justify-self: center;
+}
+
+.right {
+  justify-self: end;
+}

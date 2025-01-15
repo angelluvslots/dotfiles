@@ -1,0 +1,23 @@
+.workspaces {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.workspace .nf {
+  font-size: 125%;
+}
+
+.workspace {
+  padding: 0;
+  background: transparent;
+  color: var(--ctp-mocha-overlay0);
+  border: none;
+  border-radius: var(--brad);
+  cursor: pointer;
+  transition: transform var(--trans);
+  &.focused,
+  &:hover {
+    transform: scale(125%);
+  }
+}

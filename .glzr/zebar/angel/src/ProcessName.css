@@ -1,0 +1,7 @@
+.process-name {
+  color: var(--ctp-mocha-overlay0);
+  transition: color var(--trans);
+  &.focused {
+    color: var(--ctp-mocha-pink);
+  }
+}

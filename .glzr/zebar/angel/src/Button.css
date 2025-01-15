@@ -1,0 +1,38 @@
+.button {
+  --color: inherit;
+  background: transparent;
+  height: 1.5rem;
+  cursor: pointer;
+  border: 0;
+  color: var(--ctp-surface0);
+  transition: color var(--trans);
+  &:hover {
+    color: var(--color);
+  }
+}
+
+.button-bg .button {
+  transition: transform var(--trans);
+}
+
+.button-bg:hover .button {
+  color: var(--ctp-mocha-surface0);
+  transform: scale(75%);
+  &:hover {
+    transform: scale(100%);
+  }
+}
+
+.button-bg {
+  --color: inherit;
+  height: 1.5rem;
+  border: 0;
+  border-radius: var(--brad);
+  color: var(--color);
+  background: var(--ctp-mocha-surface0);
+  transition: background var(--trans);
+  &:hover {
+    color: var(--ctp-mocha-surface0);
+    background: var(--color);
+  }
+}
