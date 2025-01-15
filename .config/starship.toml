@@ -9,7 +9,7 @@ $directory\
 $git_branch\
 $git_status\
 [](fg:pink bg:mauve)\
-$c\
+[$c\
 $rust\
 $golang\
 $nodejs\
@@ -17,7 +17,7 @@ $php\
 $java\
 $kotlin\
 $haskell\
-$python\
+$python](fg:base bg:mauve)\
 [](fg:mauve bg:teal)\
 $docker_context\
 $conda\
@@ -97,66 +97,54 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:pink"
-format = '[[ $symbol $branch ](fg:base bg:pink)]($style)'
+format = '[ $symbol $branch ](fg:base bg:pink)'
 
 [git_status]
 style = "bg:pink"
-format = '[[($all_status$ahead_behind )](fg:base bg:pink)]($style)'
+format = '($all_status$ahead_behind )'
 
 [nodejs]
 symbol = ""
-style = "bg:mauve"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+format = '[ $symbol( $version) ](fg:base bg:mauve)'
 
 [c]
 symbol = " "
-style = "bg:mauve"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+format = '[ $symbol( $version) ](fg:base bg:mauve)'
 
 [rust]
 symbol = ""
-style = "bg:mauve"
-format = '[[ $symbol( $version) ](fg:base)]($style)'
+format = '[ $symbol( $version) ](fg:base bg:mauve)'
 
 [golang]
 symbol = ""
-style = "bg:mauve"
-format = '[[ $symbol( $version) ](fg:base)]($style)'
+format = '[ $symbol( $version) ](fg:base bg:mauve)'
 
 [php]
 symbol = ""
-style = "bg:mauve"
-format = '[[ $symbol( $version) ](fg:base)]($style)'
+format = '[ $symbol( $version) ](fg:base bg:mauve)'
 
 [java]
 symbol = " "
-style = "bg:mauve"
-format = '[[ $symbol( $version) ](fg:base)]($style)'
+format = '[ $symbol( $version) ](fg:base bg:mauve)'
 
 [kotlin]
 symbol = ""
-style = "bg:mauve"
-format = '[[ $symbol( $version) ](fg:base)]($style)'
+format = '[ $symbol( $version) ](fg:base bg:mauve)'
 
 [haskell]
 symbol = ""
-style = "bg:mauve"
-format = '[[ $symbol( $version) ](fg:base)]($style)'
+format = '[ $symbol( $version) ](fg:base bg:mauve)'
 
 [python]
 symbol = ""
-style = "bg:mauve"
-format = '[[ $symbol( $version) ](fg:base)]($style)'
+format = '[ $symbol( $version) ](fg:base bg:mauve)'
 
 [docker_context]
 symbol = ""
-style = "bg:color_bg3"
-format = '[[ $symbol( $context) ](fg:base)]($style)'
+format = '[ $symbol( $context) ](fg:base bg:mauve)'
 
 [conda]
-style = "bg:color_bg3"
-format = '[[ $symbol( $environment) ](fg:base)]($style)'
+format = '[ $symbol( $environment) ](fg:base bg:mauve)'
 
 [time]
 disabled = false
