@@ -1,6 +1,16 @@
 import PropTypes from "prop-types";
 import "./Weather.css";
 
+function getTempLevel(f_temp) {
+  if (f_temp >= 80) {
+    return "high";
+  }
+  if (f_temp > 60) {
+    return "medium";
+  }
+  return "low"
+}
+
 // Get icon to show for current weather status.
 function getWeatherIcon(weatherOutput) {
   switch (weatherOutput.status) {
@@ -33,7 +43,9 @@ function getWeatherIcon(weatherOutput) {
 
 function Weather({ weather }) {
   return weather && (
-    <div className={`weather ${weather.status}`}>
+    <div className="weather" data-temp={
+      getTempLevel(Math.round(weather.fahrenheitTemp))
+    }>
       {getWeatherIcon(weather)}
       {Math.round(weather.fahrenheitTemp)}°F
     </div>

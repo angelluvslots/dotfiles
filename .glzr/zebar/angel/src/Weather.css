@@ -1,0 +1,19 @@
+.weather {
+  display: flex;
+  flex-flow: row;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.weather .nf {
+  color: var(--ctp-mocha-yellow);
+}
+.weather[data-temp="high"] .nf {
+  color: var(--ctp-mocha-red);
+}
+.weather[data-temp="medium"] .nf {
+  color: var(--ctp-mocha-yellow);
+}
+.weather[data-temp="low"] .nf {
+  color: var(--ctp-mocha-blue);
+}

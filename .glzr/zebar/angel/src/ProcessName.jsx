@@ -24,7 +24,7 @@ function ProcessName({ glazewm }) {
     >
       {(glazewm.displayedWorkspace.children.length > 0)
         ? getName(glazewm.displayedWorkspace.children, glazewm.displayedWorkspace.childFocusOrder[0])
-        : "---"}
+        : "[empty]"}
     </div>
   )
 

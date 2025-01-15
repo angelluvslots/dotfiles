@@ -9,7 +9,7 @@ function Workspaces({ glazewm }) {
         .map((workspace) => (
           <button
             data-workspace-name={workspace.name}
-            className={`workspace workspace-color ${workspace.hasFocus && "focused"}`}
+            className={`workspace workspace-color ${(workspace.name === glazewm.displayedWorkspace.name) && "focused"}`}
             onClick={() =>
               glazewm.runCommand(
                 `focus --workspace ${workspace.name}`,
@@ -17,7 +17,7 @@ function Workspaces({ glazewm }) {
             }
             key={workspace.name}
           >
-            <i className="nf nf-oct-dot_fill no-margin"></i>
+            <i className="nf nf-oct-dot_fill"></i>
           </button>
         ))}
     </div>

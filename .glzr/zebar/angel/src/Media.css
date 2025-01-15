@@ -1,15 +1,13 @@
-.media .nf {
-  font-size: 75%;
-}
-
 .media {
+  --color-previous: var(--ctp-mocha-pink);
+  --color-pause: var(--ctp-mocha-mauve);
+  --color-next: var(--ctp-mocha-teal);
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   gap: 1rem;
 }
 
-.media-buttons {
-  display: flex;
-  flex-flow: row nowrap;
+.media * .nf {
+  font-size: 90%;
 }

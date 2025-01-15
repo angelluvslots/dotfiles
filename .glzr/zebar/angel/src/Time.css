@@ -1,0 +1,10 @@
+.time {
+  display: flex;
+  flex-flow: row;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.time .nf {
+  color: var(--ctp-mocha-teal);
+}
