@@ -1,11 +1,11 @@
 {
   "$schema": "https://github.com/glzr-io/zebar/raw/v2.4.0/resources/widget-schema.json",
-  "htmlPath": "./dist/index.html",
+  "htmlPath": "./index.html",
   "zOrder": "normal",
   "shownInTaskbar": false,
   "focused": false,
   "resizable": false,
-  "transparent": false,
+  "transparent": true,
   "presets": [
     {
       "name": "default",
