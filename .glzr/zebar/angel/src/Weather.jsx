@@ -8,7 +8,7 @@ function getTempLevel(f_temp) {
   if (f_temp > 60) {
     return "medium";
   }
-  return "low"
+  return "low";
 }
 
 // Get icon to show for current weather status.
@@ -42,18 +42,21 @@ function getWeatherIcon(weatherOutput) {
 }
 
 function Weather({ weather }) {
-  return weather && (
-    <div className="weather" data-temp={
-      getTempLevel(Math.round(weather.fahrenheitTemp))
-    }>
-      {getWeatherIcon(weather)}
-      {Math.round(weather.fahrenheitTemp)}°F
-    </div>
-  )
+  return (
+    weather && (
+      <div
+        className="weather"
+        data-temp={getTempLevel(Math.round(weather.fahrenheitTemp))}
+      >
+        {getWeatherIcon(weather)}
+        {Math.round(weather.fahrenheitTemp)}°F
+      </div>
+    )
+  );
 }
 
 Weather.propTypes = {
   weather: PropTypes.any,
-}
+};
 
 export default Weather;

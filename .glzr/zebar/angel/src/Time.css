@@ -3,8 +3,9 @@
   flex-flow: row;
   gap: 0.75rem;
   align-items: center;
+  cursor: pointer;
 }
 
 .time .nf {
-  color: var(--ctp-mocha-teal);
+  color: var(--color-time);
 }

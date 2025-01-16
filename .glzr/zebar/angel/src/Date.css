@@ -3,8 +3,9 @@
   flex-flow: row;
   gap: 0.75rem;
   align-items: center;
+  cursor: pointer;
 }
 
 .date .nf {
-  color: var(--ctp-mocha-mauve);
+  color: var(--color-date);
 }

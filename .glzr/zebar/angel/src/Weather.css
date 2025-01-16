@@ -5,15 +5,12 @@
   align-items: center;
 }
 
-.weather .nf {
-  color: var(--ctp-mocha-yellow);
-}
 .weather[data-temp="high"] .nf {
-  color: var(--ctp-mocha-red);
+  color: var(--color-weather-high);
 }
 .weather[data-temp="medium"] .nf {
-  color: var(--ctp-mocha-yellow);
+  color: var(--color-weather-medium);
 }
 .weather[data-temp="low"] .nf {
-  color: var(--ctp-mocha-blue);
+  color: var(--color-weather-low);
 }

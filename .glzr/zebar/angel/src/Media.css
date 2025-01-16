@@ -1,7 +1,4 @@
 .media {
-  --color-previous: var(--ctp-mocha-pink);
-  --color-pause: var(--ctp-mocha-mauve);
-  --color-next: var(--ctp-mocha-teal);
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
