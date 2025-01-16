@@ -100,8 +100,7 @@ symbol = ""
 format = '[ $symbol $branch ](fg:base bg:pink)'
 
 [git_status]
-style = "bg:pink"
-format = '($all_status$ahead_behind )'
+format = '[($all_status$ahead_behind )](fg:base bg:pink)'
 
 [nodejs]
 symbol = ""
