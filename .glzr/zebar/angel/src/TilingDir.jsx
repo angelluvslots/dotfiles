@@ -4,16 +4,18 @@ import "./TilingDir.css";
 
 function TilingDir({ glazewm }) {
   return glazewm && (
-    <Buttons
-      buttons={[{
-        action: () => glazewm.runCommand("toggle-tiling-direction"),
-        icon: `tiling-dir nf ${glazewm.tilingDirection === "horizontal"
-          ? "nf-md-swap_horizontal"
-          : "nf-md-swap_vertical"
-          }`,
-        color: "var(--color-tiling-dir)",
-      }]}
-    />
+    <div className="tiling-dir">
+      <Buttons
+        buttons={[{
+          action: () => glazewm.runCommand("toggle-tiling-direction"),
+          icon: `nf ${glazewm.tilingDirection === "horizontal"
+            ? "nf-md-swap_horizontal"
+            : "nf-md-swap_vertical"
+            }`,
+          color: "var(--color-tiling-dir)",
+        }]}
+      />
+    </div>
   );
 }
 
