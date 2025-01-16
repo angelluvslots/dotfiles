@@ -9,7 +9,7 @@ function limitLength(str, len, ending = "...") {
 function Media({ media }) {
   return media?.currentSession?.artist && (
     <div className="media">
-      <Buttons defaultColor="var(--ctp-mocha-pink)" buttons={[
+      <Buttons buttons={[
         {
           icon: "nf nf-md-skip_previous",
           action: (async () => await media.previous()),

@@ -5,7 +5,6 @@ import "./TilingDir.css";
 function TilingDir({ glazewm }) {
   return glazewm && (
     <Buttons
-      defaultColor="var(--color-tiling-dir)"
       buttons={[{
         action: () => glazewm.runCommand("toggle-tiling-direction"),
         icon: `tiling-dir nf ${glazewm.tilingDirection === "horizontal"
