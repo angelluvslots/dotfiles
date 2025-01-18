@@ -5,6 +5,11 @@
   gap: 1rem;
 }
 
-.media * .nf {
+.media .media-pause {
   font-size: 90%;
+}
+
+.media .media-previous,
+.media .media-next {
+  font-size: 80%;
 }

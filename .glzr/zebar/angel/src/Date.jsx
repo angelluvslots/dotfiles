@@ -9,13 +9,13 @@ function Date({ date }) {
           navigator.clipboard.writeText(
             date.formatted
               .toLowerCase()
-              .replace("|", "-")
+              .split("|")[0]
               .replaceAll(":", "-")
               .replaceAll(" ", "-")
           )}
       >
         <i className="nf nf-md-calendar"></i>
-{ date.formatted.split("|")[0].toLowerCase() }  
+        {date.formatted.split("|")[0].toLowerCase()}
       </div>
     )
   );

@@ -13,17 +13,17 @@ function Media({ media }) {
         <Buttons
           buttons={[
             {
-              icon: "nf nf-md-skip_previous",
+              icon: "media-previous nf nf-md-skip_previous",
               action: async () => await media.previous(),
               color: "var(--color-media-previous)",
             },
             {
-              icon: `nf ${media.currentSession.isPlaying ? "nf-md-pause" : "nf-md-play"}`,
+              icon: `media-pause nf ${media.currentSession.isPlaying ? "nf-md-pause" : "nf-md-play"}`,
               action: async () => await media.togglePlayPause(),
               color: "var(--color-media-pause)",
             },
             {
-              icon: "nf nf-md-skip_next",
+              icon: "media-next nf nf-md-skip_next",
               action: async () => await media.next(),
               color: "var(--color-media-next)",
             },

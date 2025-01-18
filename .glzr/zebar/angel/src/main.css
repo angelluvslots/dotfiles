@@ -23,7 +23,7 @@
   --color-media-pause: var(--color-accent-0);
   --color-media-next: var(--color-accent-1);
   --brad: 0.25rem;
-  --trans: 0.25s;
+  --trans: 0.25s ease-in-out;
   overflow: hidden;
   font-size: 18px;
   font-family: "JetBrainsMono Nerd Font Propo";
