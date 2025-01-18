@@ -7,7 +7,7 @@ import "./main.css";
 const providers = zebar.createProviderGroup({
   glazewm: { type: "glazewm" },
   media: { type: "media" },
-  date: { type: "date", formatting: "EEE-yyyy-mm-dd|tt" },
+  date: { type: "date", formatting: "yyyy-MM-dd-EEE|tt" },
   weather: { type: "weather" },
 });
 
