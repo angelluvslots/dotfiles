@@ -19,6 +19,9 @@
   --color-time: var(--color-accent-2);
   --color-tiling-dir-h: var(--color-accent-2);
   --color-tiling-dir-v: var(--color-accent-3);
+  --color-media-previous: var(--color-accent-1);
+  --color-media-pause: var(--color-accent-0);
+  --color-media-next: var(--color-accent-1);
   --brad: 0.25rem;
   --trans: 0.25s;
   overflow: hidden;
