@@ -18,6 +18,8 @@ function App(props) {
     providers.onOutput(() => setOutput(providers.outputMap));
   }, []);
 
+  console.log(output.glazewm)
+
   return (
     <div className="app">
       <div className="left">
