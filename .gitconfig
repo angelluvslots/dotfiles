@@ -1,2 +1,7 @@
 [init]
 	defaultBranch = main
+[user]
+	name = angelluvslots
+	email = vvoid127@gmail.com
+[push]
+	autoSetupRemote = true
