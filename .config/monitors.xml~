@@ -5,6 +5,7 @@
       <x>0</x>
       <y>520</y>
       <scale>1</scale>
+      <primary>yes</primary>
       <monitor>
         <monitorspec>
           <connector>HDMI-1</connector>
@@ -15,7 +16,7 @@
         <mode>
           <width>1920</width>
           <height>1080</height>
-          <rate>59.996</rate>
+          <rate>164.999</rate>
         </mode>
       </monitor>
     </logicalmonitor>
@@ -23,7 +24,6 @@
       <x>1920</x>
       <y>0</y>
       <scale>1</scale>
-      <primary>yes</primary>
       <monitor>
         <monitorspec>
           <connector>eDP-2</connector>

@@ -1,3 +1,6 @@
 font-family = "JetBrainsMonoNF Nerd Font Propo"
-theme = catppuccin-mocha
+font-size = 20
+window-inherit-font-size = false
+theme = GruvboxDark
+window-theme = ghostty
 background-opacity = 0.8
