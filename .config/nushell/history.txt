@@ -103,3 +103,16 @@ df add .config/nushell/
 df stat
 df add .config/nushell/history.txt
 df stat
+df add .config/nushell/history.txt
+df com "nushel n stuff"
+df push
+cd .config/nushell
+z
+z .config/nushell
+zz
+cd
+z nushell
+nvim
+ls
+cd
+df stat
