@@ -1,6 +1,9 @@
+command = nu
+
 font-family = "JetBrainsMonoNF Nerd Font Propo"
 font-size = 20
 window-inherit-font-size = false
+
 theme = catppuccin-mocha
 window-theme = ghostty
 background-opacity = 0.8

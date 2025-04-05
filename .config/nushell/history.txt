@@ -1,0 +1,105 @@
+exit
+cd .config/nvim
+nvim
+git all
+git config --global alias.all "add -A"
+git all
+git stat
+git com "a lot"; git push
+git pul
+git pull
+config nu
+nvim
+config nu
+cd .config/nvim
+nvim
+git all
+git stat
+nvim
+git all
+git com "remove nu"
+git push
+cd
+clr
+clear
+cd .nv
+ls
+cd
+yazi
+fzf
+rg
+z
+cd nixos
+nvim
+rb
+z
+$nu.env-path
+cd .config/nushell
+nvim
+cd
+cd .config/nushell
+nvim
+z
+z -h
+ls
+cd nixos
+nvim
+config nu
+cd .config/nushell
+z ~/.config/nushell
+ls
+nvim .bashrc
+cd
+nvim
+zn
+nv
+alias
+alias nv = nvim
+nv
+nvim
+nv
+rb
+$env
+rb
+nvim .bashrc
+zn
+nix-env --list-generations
+sudo nix-collect-garbage -d 
+cd .config/nushell
+zn
+z
+nvim
+cd
+df stat
+cd .config/nushell
+nvm
+nv
+df
+df stat
+df
+df stt
+df stat
+cd .config/nushell
+df stat
+df
+df stat
+rb
+df
+df stat
+rb
+nv
+cd
+df
+df add .config/nushell
+cd
+df add .config/nushell
+ls .config
+df stat
+df up
+df stat
+df up
+df stat
+df add .config/nushell/
+df stat
+df add .config/nushell/history.txt
+df stat

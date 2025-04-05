@@ -22,13 +22,18 @@ in
     inputs.zen-browser.packages."${system}".default
 
     # Cli
-    neovim
-    docker
-    xclip
-    p7zip
-    unzip
     git
     github-cli
+    neovim
+    yazi
+    nushell
+    p7zip
+    ffmpeg
+    xclip
+    zoxide
+    ripgrep
+    fzf
+    docker
     neofetch
     lshw
 
@@ -45,11 +50,6 @@ in
     waybar
     hyprpaper
     rofi-wayland
-
-    # Gnome
-    # gtk4
-    # gnomeExtensions.forge
-    # gnomeExtensions.open-bar
   ];
 
   # OLD WAY

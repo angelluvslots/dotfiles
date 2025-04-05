@@ -15,6 +15,12 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  environment.sessionVariables = {
+    EDITOR = "nvim";
+    BROWSER = "zen";
+    TERMINAL = "ghostty";
+  };
+
   # Enable networking
   networking.networkmanager.enable = true;
 
