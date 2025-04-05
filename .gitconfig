@@ -16,3 +16,5 @@
 	com = commit -m
 	up = add -u
 	all = add -a
+	ls = ls-tree --full-tree --name-only HEAD
+	lsr = ls-tree --full-tree --name-only -r HEAD

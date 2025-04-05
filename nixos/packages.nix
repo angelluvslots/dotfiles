@@ -44,7 +44,7 @@ in
     kitty
     waybar
     hyprpaper
-    wofi
+    rofi-wayland
 
     # Gnome
     # gtk4
