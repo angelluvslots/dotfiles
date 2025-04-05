@@ -11,3 +11,8 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/run/current-system/sw/bin/gh auth git-credential
+[alias]
+	stat = status
+	com = commit -m
+	up = add -u
+	all = add -a
