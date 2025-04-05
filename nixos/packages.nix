@@ -11,6 +11,8 @@ in
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  programs.light.enable = true;
+
   environment.systemPackages = with pkgs; [
     ghostty
     obsidian
@@ -21,6 +23,10 @@ in
 
     # Cli
     neovim
+    docker
+    xclip
+    p7zip
+    unzip
     git
     github-cli
     neofetch
@@ -37,7 +43,8 @@ in
     # Hyprland
     kitty
     waybar
-    rofi-wayland
+    hyprpaper
+    wofi
 
     # Gnome
     # gtk4
