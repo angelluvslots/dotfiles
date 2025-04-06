@@ -26,6 +26,7 @@ in
     github-cli
     neovim
     yazi
+    gnumake
     nushell
     p7zip
     ffmpeg
