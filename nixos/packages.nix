@@ -28,6 +28,7 @@ in
     yazi
     gnumake
     nushell
+    watchexec
     p7zip
     ffmpeg
     xclip
