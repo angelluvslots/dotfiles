@@ -12,6 +12,7 @@ in
   nixpkgs.config.allowUnfree = true;
 
   programs.light.enable = true;
+  programs.nix-ld.enable = true;
 
   environment.systemPackages = with pkgs; [
     ghostty
@@ -30,6 +31,8 @@ in
     nushell
     watchexec
     p7zip
+    unzip
+    wget
     ffmpeg
     xclip
     zoxide
@@ -45,6 +48,7 @@ in
     lua
     luajit
     gcc
+    libclang
     python3
 
     # Hyprland
