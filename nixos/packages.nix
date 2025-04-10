@@ -32,9 +32,12 @@ in
     watchexec
     p7zip
     unzip
+    valgrind
+    glib
     wget
     ffmpeg
-    xclip
+    wl-clipboard
+    wtype
     zoxide
     ripgrep
     fzf
@@ -56,6 +59,7 @@ in
     waybar
     hyprpaper
     rofi-wayland
+    rofimoji
   ];
 
   # OLD WAY
