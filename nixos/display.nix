@@ -11,7 +11,13 @@
   # services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
-  services.xserver.xkb = { layout = "us"; variant = ""; };
+
+  services.xserver = {
+    xkb.layout = "us,es";
+    xkbVariant = "";
+    xkbOptions = "grp:caps_toggle";
+    exportConfiguration = true;
+  };
 
   # Enable hyprland
   programs.hyprland = {

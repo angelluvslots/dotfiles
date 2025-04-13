@@ -19,8 +19,11 @@ in
     obsidian
     discord
     spotify
-    # spicetify
+    steam
     inputs.zen-browser.packages."${system}".default
+    # just in case i can't use zen for something
+    chromium
+    # spicetify
 
     # Cli
     git
@@ -58,6 +61,8 @@ in
     kitty
     waybar
     hyprpaper
+    hyprcursor
+    catppuccin-cursors.mochaMauve
     rofi-wayland
     rofimoji
   ];
