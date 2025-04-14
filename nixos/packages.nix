@@ -14,16 +14,29 @@ in
   programs.light.enable = true;
   programs.nix-ld.enable = true;
 
+  programs.steam = {
+    gamescopeSession.enable = true;
+    enable = true;
+  };
+  programs.gamemode.enable = true;
+
+  environment.sessionVariables = {
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/angel/.steam/root/compatibilitytools.d";
+  };
+
   environment.systemPackages = with pkgs; [
     ghostty
     obsidian
     discord
     spotify
-    steam
     inputs.zen-browser.packages."${system}".default
+    bitwarden
     # just in case i can't use zen for something
     chromium
     # spicetify
+
+    # Steam
+    protonup
 
     # Cli
     git
@@ -39,6 +52,9 @@ in
     glib
     wget
     ffmpeg
+    # i wish i didn't have to install this *spits cmake because it fucking
+    # sucks, fuck you cmake*
+    cmake
     wl-clipboard
     wtype
     zoxide
