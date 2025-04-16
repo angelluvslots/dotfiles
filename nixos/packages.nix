@@ -77,6 +77,8 @@ in
     kitty
     waybar
     hyprpaper
+    hyprshot
+    mako
     hyprcursor
     catppuccin-cursors.mochaMauve
     rofi-wayland

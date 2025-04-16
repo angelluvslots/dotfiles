@@ -3,6 +3,11 @@ $env.config = {
   edit_mode: 'vi'
 }
 
+print $"(ansi magenta_bold)~ no programming until ~(ansi green)
+  - all school is DONE
+  - you've done art
+  - you've exercised"
+
 alias dot = git --git-dir=($env.HOME)/.dotfiles/ --work-tree=($env.HOME)
 alias rb = sudo nixos-rebuild switch --flake /home/angel/nixos#angel
 alias nv = nvim
