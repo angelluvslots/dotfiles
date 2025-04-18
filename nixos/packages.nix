@@ -80,6 +80,7 @@ in
     hyprshot
     mako
     hyprcursor
+    playerctl
     catppuccin-cursors.mochaMauve
     rofi-wayland
     rofimoji
