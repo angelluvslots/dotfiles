@@ -29,6 +29,7 @@ in
     obsidian
     discord
     spotify
+    modrinth-app
     inputs.zen-browser.packages."${system}".default
     bitwarden
     # just in case i can't use zen for something
@@ -44,6 +45,7 @@ in
     neovim
     yazi
     gnumake
+    bat
     nushell
     watchexec
     p7zip
