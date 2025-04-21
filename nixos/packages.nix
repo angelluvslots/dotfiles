@@ -1,11 +1,7 @@
 { inputs, pkgs, ... }:
 
 let
-  # spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.system};
-  # spicetify = inputs.spicetify-nix.lib.mkSpicetify pkgs {
-    # enable = true;
-    # theme = spicePkgs.themes.Gruvbox;
-  # };
+  spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.system};
 in
 {
   # Allow unfree packages
@@ -20,6 +16,22 @@ in
   };
   programs.gamemode.enable = true;
 
+  programs.spicetify = {
+    enable = true;
+    alwaysEnableDevTools = true;
+    experimentalFeatures = true;
+    windowManagerPatch = true;
+    enabledExtensions = with spicePkgs.extensions; [
+      keyboardShortcut
+      powerBar
+      addToQueueTop
+      beautifulLyrics
+    ];
+    # theme = spicePkgs.themes.defaultDynamic;
+    theme = spicePkgs.themes.catppuccin;
+    colorScheme = "mocha";
+  };
+
   environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/angel/.steam/root/compatibilitytools.d";
   };
@@ -28,13 +40,12 @@ in
     ghostty
     obsidian
     discord
-    spotify
     modrinth-app
     inputs.zen-browser.packages."${system}".default
     bitwarden
-    # just in case i can't use zen for something
     chromium
-    # spicetify
+    # Added automatically by spicetify
+    # spotify
 
     # Steam
     protonup

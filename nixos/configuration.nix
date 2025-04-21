@@ -5,6 +5,7 @@
     ./hardware-configuration.nix
     ./packages.nix
     ./display.nix
+    inputs.spicetify-nix.nixosModules.spicetify
   ];
 
   # Bootloader.
