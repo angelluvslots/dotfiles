@@ -13,7 +13,7 @@
   # Configure keymap in X11
 
   services.xserver = {
-    xkb.layout = "us,es";
+    xkb.layout = "us,latam";
     xkbVariant = "";
     xkbOptions = "grp:caps_toggle";
     exportConfiguration = true;
