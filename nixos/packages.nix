@@ -57,6 +57,7 @@ in
     neovim
     yazi
     gnumake
+    curlFull.dev
     bat
     nushell
     watchexec
