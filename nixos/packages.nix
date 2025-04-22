@@ -52,6 +52,7 @@ in
 
     # Cli
     git
+    jq
     github-cli
     neovim
     yazi
