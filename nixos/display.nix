@@ -15,8 +15,8 @@
 
   services.xserver = {
     xkb.layout = "us,latam";
-    xkbVariant = "";
-    xkbOptions = "grp:caps_toggle";
+    xkb.variant = "";
+    xkb.options = "grp:caps_toggle";
     exportConfiguration = true;
   };
 
@@ -35,11 +35,12 @@
       modesetting.enable = true;
       powerManagement.enable = false;
       powerManagement.finegrained = false;
-      open = false;
+      open = true;
       nvidiaSettings = true;
       package = config.boot.kernelPackages.nvidiaPackages.beta;
       prime = {
         offload.enable = false;
+        offload.enableOffloadCmd = false;
         sync.enable = true;
         intelBusId = "PCI:0:2:0";
         nvidiaBusId = "PCI:1:0:0";
