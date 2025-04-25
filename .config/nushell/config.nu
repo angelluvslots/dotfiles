@@ -11,6 +11,12 @@ print $"(ansi magenta_bold)~ no programming until ~(ansi green)
 alias dot = git --git-dir=($env.HOME)/.dotfiles/ --work-tree=($env.HOME)
 alias rb = sudo nixos-rebuild switch --flake /home/angel/nixos#angel
 alias nv = nvim
+alias lsa = ls -a
+
+def fnv [] {
+  let p = fzf
+  nv $p
+}
 
 def --env y [...args] {
   let tmp = (mktemp -t "yazi-cwd.XXXXXX")
