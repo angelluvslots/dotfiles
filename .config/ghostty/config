@@ -1,4 +1,4 @@
-command = nu
+command = fish
 
 font-family = "JetBrainsMonoNF Nerd Font Propo"
 font-size = 20

@@ -53,6 +53,7 @@ in
     # Cli
     git
     jq
+    fish
     fd
     github-cli
     neovim
