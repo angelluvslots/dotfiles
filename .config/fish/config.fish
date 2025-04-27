@@ -18,4 +18,5 @@ alias rb="sudo nixos-rebuild switch --flake $HOME/nixos#angel"
 alias nv="nvim"
 alias lsa="ls -a"
 
+starship init fish | source
 zoxide init fish | source

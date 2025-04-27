@@ -54,6 +54,7 @@ in
     git
     jq
     fish
+    starship
     fd
     github-cli
     neovim
