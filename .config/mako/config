@@ -1,0 +1,20 @@
+font=JetBrainsMono Nerd Font Propo 14
+
+border-radius=10
+padding=16
+outer-margin=16
+width=400
+height=300
+
+icon-border-radius=10
+
+default-timeout=5000
+anchor=top-right
+
+background-color=#1e1e2ecc
+text-color=#cdd6f4
+border-color=#f5e0dc
+progress-color=over #313244
+
+[urgency=high]
+border-color=#fab387
