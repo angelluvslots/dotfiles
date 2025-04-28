@@ -60,6 +60,7 @@ in
     neovim
     yazi
     gnumake
+    alsa-utils
     curlFull.dev
     bat
     nushell
