@@ -88,6 +88,7 @@ in
     rustup
     lua
     luajit
+    zig
     gcc
     libclang
     python3
