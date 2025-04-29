@@ -1,0 +1,47 @@
+@import "mocha.css";
+
+window {
+  background-color: transparent;
+  font: 24px "JetBrainsMono Nerd Font Propo";
+  color: @text;
+}
+
+.modules-left, .modules-center, .modules-right {
+  margin: 32px calc(32px - 0.5em) 0px calc(32px - 0.5em);
+}
+
+#battery, #clock, #workspaces, #window, #temperature {
+  background-color: alpha(@base, 0.6);
+  padding: 0 0.75em;
+  margin: 0 0.5em;
+  border-radius: 30px;
+}
+
+#window {
+  color: @rosewater;
+}
+
+#temperature {
+  color: @green;
+}
+
+#workspaces button label {
+  color: @overlay1;
+  transition: all 0.5s;
+}
+
+#workspaces button.active label {
+  color: @rosewater;
+}
+
+#clock {
+  color: @yellow;
+}
+
+#battery {
+  color: @green;
+}
+
+#battery.warning {
+  color: @yellow;
+}

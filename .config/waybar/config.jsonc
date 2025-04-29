@@ -1,0 +1,34 @@
+{
+    "layer": "top",
+    "modules-left": ["hyprland/workspaces", "battery"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["temperature", "clock"],
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "format-icons": {
+        "urgent": "",
+        "default": ""
+      },
+      "sort-by-number": true
+    },
+    "hyprland/window": {
+      "format": "[{title:.50}]"
+    },
+    "temperature": {
+        "interval": 60,
+        "format": "{temperatureF}°F",
+    },
+    "battery": {
+        "interval": 60,
+        "states": {
+            "warning": 40,
+            "critical": 20
+        },
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format": "{:%a %F %I:%M %p}"
+    }
+}
