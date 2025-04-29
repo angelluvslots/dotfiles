@@ -1,0 +1,121 @@
+@import "catppuccin-mocha"
+
+* {
+  foreground: @subtext0;
+}
+
+configuration {
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+window {
+  font: "JetBrainsMono Nerd Font Propo 16";
+  border-radius: 24;
+  border: false;
+  padding: 0.5em;
+  transparency: "real";
+  background-color: #1e1e2e99;
+  width: 800px;
+}
+
+entry {
+    placeholder: "";
+    placeholder-color: @subtext0;
+    color: @text;
+    cursor-width: 1ch;
+    blink: false;
+}
+
+case-indicator {
+  enabled: false;
+}
+
+inputbar {
+  children: [prompt, textbox-sep, entry];
+}
+
+textbox-sep {
+  content: " ";
+  text-color: @rosewater;
+  expand: false;
+}
+
+message {
+  text-color: @text;
+  placeholder-color: @text;
+}
+
+* {
+  text-color: @text;
+}
+
+prompt {
+  color: @rosewater;
+}
+
+num-rows, num-filtered-rows {
+  text-color: @text;
+}
+
+listview {
+  border: none;
+  spacing: 0.25em;
+  lines: 8;
+}
+
+element {
+  spacing: 0.5em;
+  background-color: transparent;
+}
+
+element-icon {
+  size: 1em;
+}
+
+listview {
+  scrollbar: false;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       @text;
+}
+element normal.urgent {
+    background-color: transparent;
+    text-color:       @text;
+}
+element normal.active {
+    background-color: transparent;
+    text-color:       @text;
+}
+element selected.normal {
+    background-color: transparent;
+    text-color:       @text;
+}
+element selected.urgent {
+    background-color: transparent;
+    text-color:       @text;
+}
+element selected.active {
+    background-color: transparent;
+    text-color:       @text;
+}
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @text;
+}
+element alternate.urgent {
+    background-color: transparent;
+    text-color:       @text;
+}
+element alternate.active {
+    background-color: transparent;
+    text-color:       @text;
+}
