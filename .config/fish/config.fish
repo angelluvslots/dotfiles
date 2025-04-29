@@ -26,3 +26,5 @@ end
 starship init fish | source
 enable_transience
 zoxide init fish | source
+
+neofetch
