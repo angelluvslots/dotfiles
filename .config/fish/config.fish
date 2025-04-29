@@ -18,5 +18,11 @@ alias rb="sudo nixos-rebuild switch --flake $HOME/nixos#angel"
 alias nv="nvim"
 alias lsa="ls -a"
 
+function starship_transient_prompt_func
+  starship module custom.last
+  starship module character
+end
+
 starship init fish | source
+enable_transience
 zoxide init fish | source
