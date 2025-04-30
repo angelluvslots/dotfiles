@@ -10,11 +10,38 @@ window {
   margin: 32px calc(32px - 0.5em) 0px calc(32px - 0.5em);
 }
 
-#battery, #clock, #workspaces, #window, #temperature {
+#battery, #clock, #workspaces, #window, #temperature, #pulseaudio-slider {
   background-color: alpha(@base, 0.6);
   padding: 0 0.75em;
   margin: 0 0.5em;
   border-radius: 30px;
+}
+
+#workspaces {
+  padding: 0 0.5em;
+}
+
+#pulseaudio-slider {
+  padding: 0 calc(0.75em + 6px);
+}
+#pulseaudio-slider slider {
+    min-height: 12px;
+    background-color: @rosewater;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+#pulseaudio-slider trough {
+    min-height: 10px;
+    min-width: 80px;
+    border: none;
+    border-radius: 1000px;
+    background-color: alpha(@surface0, 0.6);
+}
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 1000px;
+    background-color: @rosewater;
 }
 
 #window {

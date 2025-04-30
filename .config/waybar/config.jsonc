@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "modules-left": ["hyprland/workspaces", "battery"],
+    "modules-left": ["hyprland/workspaces", "battery", "pulseaudio/slider"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["temperature", "clock"],
     "hyprland/workspaces": {
@@ -11,6 +11,11 @@
         "default": ""
       },
       "sort-by-number": true
+    },
+    "pulseaudio/slider": {
+      "min": 0,
+      "max": 80,
+      "orientation": "horizontal"
     },
     "hyprland/window": {
       "format": "[{title:.50}]"
