@@ -21,7 +21,6 @@ alias lsa="ls -a"
 
 function starship_transient_prompt_func
   starship module custom.last
-  starship module character
 end
 
 starship init fish | source

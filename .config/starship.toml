@@ -2,8 +2,8 @@
 
 palette = "catppuccin_mocha"
 format = '''
-[╭────$username$directory$git_branch$git_status=^-w-^=](rosewater)
-[╰](rosewater)$character'''
+[╭─$character──$username$directory$git_branch$git_status=^-w-^=](rosewater)
+[╰─> ](rosewater)'''
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
@@ -34,8 +34,9 @@ mantle = "#181825"
 crust = "#11111b"
 
 [character]
-success_symbol = '─[>](rosewater)'
-error_symbol = '─[!](rosewater)'
+success_symbol = '[─](rosewater)'
+error_symbol = '[!](red)'
+format = '$symbol'
 
 [directory]
 format = '[$path$read_only](teal) '
@@ -60,4 +61,4 @@ show_always = true
 when = true
 shell = 'bash -c :'
 format = '''
-[─](rosewater)'''
+[──> ](rosewater)'''
