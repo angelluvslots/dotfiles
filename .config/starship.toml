@@ -36,6 +36,10 @@ crust = "#11111b"
 [character]
 success_symbol = '[─](rosewater)'
 error_symbol = '[!](red)'
+vimcmd_symbol = '[\$](rosewater)'
+vimcmd_replace_one_symbol = '[?](teal)'
+vimcmd_replace_symbol = '[?](pink)'
+vimcmd_visual_symbol = '[\$](pink)'
 format = '$symbol'
 
 [directory]
