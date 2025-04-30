@@ -18,6 +18,7 @@ alias dot="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias rb="sudo nixos-rebuild switch --flake $HOME/nixos#angel"
 alias nv="nvim"
 alias lsa="ls -a"
+alias cnf="clear && neofetch"
 
 function starship_transient_prompt_func
   starship module custom.last
