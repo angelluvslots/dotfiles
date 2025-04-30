@@ -57,7 +57,7 @@ format = '[@$user]($style) '
 show_always = true
 
 [custom.last]
-command = ''
-when = ''' echo 1 '''
+when = true
+shell = 'bash -c :'
 format = '''
 [─](rosewater)'''

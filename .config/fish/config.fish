@@ -11,6 +11,7 @@ function y
     rm -f -- "$tmp"
 end
 
+fish_vi_key_bindings
 set fish_greeting
 
 alias dot="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
