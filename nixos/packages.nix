@@ -70,6 +70,7 @@ in
     valgrind
     glib
     wget
+    htop
     ffmpeg
     # i wish i didn't have to install this *spits cmake because it fucking
     # sucks, fuck you cmake*
