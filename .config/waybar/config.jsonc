@@ -1,8 +1,8 @@
 {
     "layer": "top",
-    "modules-left": ["hyprland/workspaces", "battery", "pulseaudio/slider"],
+    "modules-left": ["hyprland/workspaces", "battery", "pulseaudio"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["temperature", "clock"],
+    "modules-right": ["cava", "temperature", "clock"],
     "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
@@ -12,17 +12,41 @@
       },
       "sort-by-number": true
     },
+    "pulseaudio": {
+      "format-icons": ["", ""],
+      "format": "{icon} %{volume}"
+    },
+    /*
     "pulseaudio/slider": {
       "min": 0,
       "max": 100,
       "orientation": "horizontal"
     },
+    */
     "hyprland/window": {
       "format": "[{title:.50}]"
     },
+"cava": {
+        // "cava_config": "/home/angel/.config/cava/config",
+        "framerate": 80,
+        "input_delay": 1,
+        "autosens": 1,
+        "noise_reduction": 0.4,
+        "bars": 8,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 5000,
+        "method": "pulse",
+        "source": "auto",
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+    },
     "temperature": {
         "interval": 60,
-        "format": "{temperatureF}°F",
+        "format": " {temperatureF}°F",
     },
     "battery": {
         "interval": 60,
@@ -30,10 +54,10 @@
             "warning": 40,
             "critical": 20
         },
-        "format": "{capacity}% {icon}",
+        "format": "{icon} {capacity}%",
         "format-icons": ["", "", "", "", ""]
     },
     "clock": {
-        "format": "{:%a %F %I:%M %p}"
+        "format": "󰃭 {:%m-%d  %H:%M}"
     }
 }

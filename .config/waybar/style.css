@@ -10,11 +10,30 @@ window {
   margin: 32px calc(32px - 0.5em) 0px calc(32px - 0.5em);
 }
 
-#battery, #clock, #workspaces, #window, #temperature, #pulseaudio-slider {
+tooltip {
   background-color: alpha(@base, 0.6);
   padding: 0 0.75em;
   margin: 0 0.5em;
   border-radius: 30px;
+  color: @text;
+  font-size: 24px;
+}
+tooltip label {
+}
+
+#battery, #clock, #workspaces, #window, #temperature, #pulseaudio-slider, #pulseaudio, #cava {
+  background-color: alpha(@base, 0.6);
+  padding: 0 0.75em;
+  margin: 0 0.5em;
+  border-radius: 30px;
+}
+
+#cava {
+  color: @teal;
+}
+
+#pulseaudio {
+  color: @teal;
 }
 
 #pulseaudio-slider {
@@ -68,7 +87,7 @@ window {
 }
 
 #workspaces button.active:hover label {
-  color: @pink;
+  color: @teal;
 }
 
 #workspaces button.active label {
