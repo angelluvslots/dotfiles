@@ -71,6 +71,7 @@ in
     glib
     wget
     htop
+    nvtopPackages.nvidia
     ffmpeg
     # i wish i didn't have to install this *spits cmake because it fucking
     # sucks, fuck you cmake*
