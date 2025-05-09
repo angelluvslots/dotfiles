@@ -61,6 +61,7 @@ in
     yazi
     gnumake
     alsa-utils
+    cava
     curlFull.dev
     bat
     nushell
