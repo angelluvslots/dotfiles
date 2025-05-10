@@ -101,6 +101,7 @@ in
     waybar
     hyprpaper
     hyprshot
+    hyprlock
     mako
     hyprcursor
     playerctl
