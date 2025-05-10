@@ -14,7 +14,7 @@
     },
     "pulseaudio": {
       "format-icons": ["", ""],
-      "format": "{icon} %{volume}"
+      "format": "{icon} {volume}%"
     },
     /*
     "pulseaudio/slider": {
