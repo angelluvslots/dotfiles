@@ -12,11 +12,11 @@
   # services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
-
+  # not sure if this does anything when using hyprland
   services.xserver = {
     xkb.layout = "us,latam";
     xkb.variant = "";
-    xkb.options = "grp:caps_toggle";
+    xkb.options = "grp:ralt_rshift_toggle,caps:escape";
     exportConfiguration = true;
   };
 
