@@ -57,6 +57,7 @@ in
     starship
     fd
     github-cli
+    spotify-player
     neovim
     yazi
     gnumake
