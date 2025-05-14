@@ -60,6 +60,7 @@ in
     spotify-player
     neovim
     yazi
+    zsh
     gnumake
     alsa-utils
     cava
@@ -86,6 +87,7 @@ in
     docker
     neofetch
     lshw
+    sdl3
 
     # Language
     gleam

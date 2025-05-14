@@ -1,4 +1,4 @@
-command = fish
+command = zsh
 
 font-family = "JetBrainsMonoNF Nerd Font Propo"
 font-size = 20
