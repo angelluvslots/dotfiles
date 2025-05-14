@@ -98,6 +98,7 @@ in
     gcc
     libclang
     python3
+    python312Packages.pip
 
     # Hyprland
     kitty
