@@ -8,13 +8,21 @@ alias zfc="zf && c"
 
 c
 
+function mxlrc() {
+  local tmp=$PWD
+  builtin cd ~/mxlrc.py
+  rm ~/mxlrc.py/.token
+  nix-shell --run "python mxlrc.py -l $1"
+  builtin cd $tmp
+}
+
 function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		builtin cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
+  local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+  yazi "$@" --cwd-file="$tmp"
+  if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+  	builtin cd -- "$cwd"
+  fi
+  rm -f -- "$tmp"
 }
 
 source <(fzf --zsh)
