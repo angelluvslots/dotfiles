@@ -16,6 +16,8 @@ in
   };
   programs.gamemode.enable = true;
 
+  services.flatpak.enable = true;
+
   programs.spicetify = {
     enable = true;
     alwaysEnableDevTools = true;
@@ -55,6 +57,7 @@ in
     jq
     fish
     starship
+    wineWowPackages.full
     fd
     github-cli
     spotify-player
