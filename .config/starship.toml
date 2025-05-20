@@ -50,6 +50,7 @@ read_only = ' '
 format = '[ $branch(:$remote_branch)](rosewater) '
 
 [git_status]
+up_to_date = "\b"
 format = '([$all_status$ahead_behind](red bold)) '
 
 [line_break]
