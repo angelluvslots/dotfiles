@@ -1,10 +1,11 @@
-alias dot="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias rb="sudo nixos-rebuild switch --flake $HOME/nixos#angel"
+alias dot="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias nv="nvim"
-alias lsa="ls -a"
 alias c="clear && neofetch"
 alias zf="z (zoxide query -l | fzf)"
 alias zfc="zf && c"
+alias ls="ls -a"
+alias sp="spotify_player"
 
 c
 
