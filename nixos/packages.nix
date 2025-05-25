@@ -100,6 +100,7 @@ in
     zig
     gcc
     libclang
+    typst
     python3
     python312Packages.pip
 
