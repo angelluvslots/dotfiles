@@ -8,6 +8,7 @@ alias zf="z \$(zoxide query -l | fzf)"
 alias zfc="zf && c"
 alias ls="ls -a"
 alias sp="spotify_player"
+alias we="watchexec -c clear"
 
 function zc() {
   z $1 && c
