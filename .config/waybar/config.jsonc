@@ -58,6 +58,6 @@
         "format-icons": ["", "", "", "", ""]
     },
     "clock": {
-        "format": "󰃭 {:%m-%d  %H:%M}"
+        "format": "󰃭 {:%d-%m  %H:%M}"
     }
 }
