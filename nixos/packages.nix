@@ -19,15 +19,15 @@ in
   services.flatpak.enable = true;
 
   programs.spicetify = {
-    enable = true;
+    enable = false;
     alwaysEnableDevTools = true;
     experimentalFeatures = true;
     windowManagerPatch = true;
     enabledExtensions = with spicePkgs.extensions; [
-      keyboardShortcut
-      powerBar
-      addToQueueTop
-      beautifulLyrics
+      # keyboardShortcut
+      # powerBar
+      # addToQueueTop
+      # beautifulLyrics
     ];
     # theme = spicePkgs.themes.defaultDynamic;
     theme = spicePkgs.themes.catppuccin;
@@ -47,7 +47,7 @@ in
     bitwarden
     chromium
     # Added automatically by spicetify
-    # spotify
+    spotify
 
     # Steam
     protonup
@@ -69,6 +69,7 @@ in
     cava
     curlFull.dev
     bat
+    sdl3
     nushell
     watchexec
     p7zip
@@ -82,6 +83,7 @@ in
     # i wish i didn't have to install this *spits cmake because it fucking
     # sucks, fuck you cmake*
     cmake
+    meson
     wl-clipboard
     wtype
     zoxide
