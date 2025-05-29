@@ -84,6 +84,7 @@ in
     # sucks, fuck you cmake*
     cmake
     meson
+    pkg-config
     wl-clipboard
     wtype
     zoxide
