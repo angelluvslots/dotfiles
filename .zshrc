@@ -3,6 +3,7 @@ clear && neofetch
 alias rb="sudo nixos-rebuild switch --flake $HOME/nixos#angel"
 alias dot="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias nv="nvim"
+alias fnv="nv \$(fzf)"
 alias c="clear && neofetch"
 alias zf="z \$(zoxide query -l | fzf)"
 alias zfc="zf && c"
