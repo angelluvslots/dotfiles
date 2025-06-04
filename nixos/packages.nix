@@ -46,6 +46,7 @@ in
     inputs.zen-browser.packages."${system}".default
     bitwarden
     chromium
+    itch
     # Added automatically by spicetify
     spotify
 
