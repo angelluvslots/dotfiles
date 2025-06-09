@@ -4,11 +4,12 @@ let
   spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.system};
 in
 {
-  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   programs.light.enable = true;
   programs.nix-ld.enable = true;
+
+  services.thermald.enable = true;
 
   programs.steam = {
     gamescopeSession.enable = true;
@@ -19,17 +20,14 @@ in
   services.flatpak.enable = true;
 
   programs.spicetify = {
-    enable = false;
+    enable = true;
     alwaysEnableDevTools = true;
     experimentalFeatures = true;
     windowManagerPatch = true;
     enabledExtensions = with spicePkgs.extensions; [
-      # keyboardShortcut
-      # powerBar
-      # addToQueueTop
-      # beautifulLyrics
+      addToQueueTop
+      beautifulLyrics
     ];
-    # theme = spicePkgs.themes.defaultDynamic;
     theme = spicePkgs.themes.catppuccin;
     colorScheme = "mocha";
   };
@@ -44,42 +42,33 @@ in
     discord
     modrinth-app
     inputs.zen-browser.packages."${system}".default
-    bitwarden
-    chromium
     itch
     # Added automatically by spicetify
-    spotify
+    # spotify
 
     # Steam
-    protonup
 
     # Cli
     git
     jq
     fish
     starship
-    wineWowPackages.full
     fd
-    github-cli
-    spotify-player
     neovim
     yazi
     zsh
     gnumake
-    alsa-utils
+    du-dust
     cava
-    curlFull.dev
     bat
-    sdl3
     nushell
     watchexec
     p7zip
     unzip
     valgrind
-    glib
     wget
     htop
-    nvtopPackages.nvidia
+    # nvtopPackages.nvidia
     ffmpeg
     # i wish i didn't have to install this *spits cmake because it fucking
     # sucks, fuck you cmake*
@@ -91,19 +80,15 @@ in
     zoxide
     ripgrep
     fzf
-    docker
     neofetch
     lshw
-    sdl3
 
     # Language
     gleam
     rustup
-    lua
     luajit
     zig
     gcc
-    libclang
     typst
     python3
     python312Packages.pip
@@ -117,7 +102,6 @@ in
     mako
     hyprcursor
     playerctl
-    catppuccin-cursors.mochaMauve
     rofi-wayland
     rofimoji
   ];

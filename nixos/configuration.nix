@@ -26,6 +26,9 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Set timeout
+  nix.settings.stalled-download-timeout = 99999999;
+
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
 
