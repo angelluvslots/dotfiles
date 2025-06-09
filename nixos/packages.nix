@@ -50,6 +50,7 @@ in
 
     # Cli
     git
+    github-cli
     jq
     fish
     starship
