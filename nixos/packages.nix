@@ -9,7 +9,12 @@ in
   programs.light.enable = true;
   programs.nix-ld.enable = true;
 
-  services.thermald.enable = true;
+  # Sets up all the libraries to load
+  programs.nix-ld.libraries = with pkgs; [
+    vlc
+    sdl3
+    SDL2
+  ];
 
   programs.steam = {
     gamescopeSession.enable = true;
@@ -23,9 +28,11 @@ in
     enable = true;
     alwaysEnableDevTools = true;
     experimentalFeatures = true;
-    windowManagerPatch = true;
+    windowManagerPatch = false;
     enabledExtensions = with spicePkgs.extensions; [
       addToQueueTop
+      shuffle
+      powerBar
       beautifulLyrics
     ];
     theme = spicePkgs.themes.catppuccin;
@@ -49,6 +56,7 @@ in
     # Steam
 
     # Cli
+    steam-run
     git
     github-cli
     jq
@@ -69,7 +77,7 @@ in
     valgrind
     wget
     htop
-    # nvtopPackages.nvidia
+    nvtopPackages.nvidia
     ffmpeg
     # i wish i didn't have to install this *spits cmake because it fucking
     # sucks, fuck you cmake*
@@ -90,6 +98,7 @@ in
     luajit
     zig
     gcc
+    llvmPackages_20.clang-tools
     typst
     python3
     python312Packages.pip

@@ -41,6 +41,8 @@
     "en_US.UTF-8"; LC_TELEPHONE = "en_US.UTF-8"; LC_TIME = "en_US.UTF-8";
   };
 
+  powerManagement.powertop.enable = true;
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
