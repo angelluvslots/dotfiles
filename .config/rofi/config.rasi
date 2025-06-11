@@ -66,13 +66,14 @@ num-rows, num-filtered-rows {
 
 listview {
   border: none;
-  spacing: 0.25em;
+  spacing: 0.125em;
   lines: 8;
 }
 
 element {
-  spacing: 0.5em;
-  background-color: transparent;
+  padding: 0.25em;
+  border-radius: 12;
+  //background-color: transparent;
 }
 
 element-icon {
@@ -96,15 +97,15 @@ element normal.active {
     text-color:       @text;
 }
 element selected.normal {
-    background-color: transparent;
+    background-color: #45475a99;
     text-color:       @text;
 }
 element selected.urgent {
-    background-color: transparent;
+    background-color: #45475a99;
     text-color:       @text;
 }
 element selected.active {
-    background-color: transparent;
+    background-color: #45475a99;
     text-color:       @text;
 }
 element alternate.normal {
