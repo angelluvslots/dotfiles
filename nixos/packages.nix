@@ -107,6 +107,7 @@ in
     kitty
     waybar
     hyprpaper
+    hyprsunset
     hyprshot
     hyprlock
     mako
