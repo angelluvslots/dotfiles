@@ -46,14 +46,37 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  hardware.bluetooth = {
+    enable = true;
+    package = pkgs.bluez;
+    powerOnBoot = true;
+    settings.General = {
+      Enable = "Source,Sink,Media,Socket";
+    };
+  };
+
+  services.blueman.enable = true;
+
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
+
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+  };
+
+  services.pipewire.wireplumber.extraConfig.bluetoothEnhancements = {
+    "monitor.bluez.properties" = {
+      "bluez5.enable-sbc-xq" = true;
+      "bluez5.enable-msbc" = true;
+      "bluez5.enable-hw-volume" = true;
+      "bluez5.roles" = [
+        "a2dp_sink" "a2dp_source" "bap_sink" "bap_source" "hfp_hf" "hfp_ag"
+      ];
+    };
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
