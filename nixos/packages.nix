@@ -49,6 +49,7 @@ in
     discord
     modrinth-app
     inputs.zen-browser.packages."${system}".default
+    blender
     itch
     # Added automatically by spicetify
     # spotify
@@ -62,6 +63,7 @@ in
     jq
     fish
     starship
+    tmux
     fd
     neovim
     yazi
