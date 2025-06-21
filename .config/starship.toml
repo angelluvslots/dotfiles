@@ -2,7 +2,7 @@
 
 palette = "catppuccin_mocha"
 format = '''
-[╭─$character──$username$directory$git_branch$git_status=^-w-^=](rosewater)
+[╭─────$username$directory$git_branch$git_status$character](rosewater)
 [╰─> ](rosewater)'''
 
 [palettes.catppuccin_mocha]
@@ -34,12 +34,12 @@ mantle = "#181825"
 crust = "#11111b"
 
 [character]
-success_symbol = '[─](rosewater)'
-error_symbol = '[!](red)'
-vimcmd_symbol = '[─](rosewater)'
-vimcmd_replace_one_symbol = '[─](rosewater)'
-vimcmd_replace_symbol = '[─](rosewater)'
-vimcmd_visual_symbol = '[─](rosewater)'
+success_symbol = '[=^- w -^=](rosewater)'
+error_symbol = '[=^q w q^=](rosewater)'
+vimcmd_symbol = '[=^o w o^=](rosewater)'
+vimcmd_replace_one_symbol = '[=^o w o^=](rosewater)'
+vimcmd_replace_symbol = '[=^o w o^=](rosewater)'
+vimcmd_visual_symbol = '[=^o w o^=](rosewater)'
 format = '$symbol'
 
 [directory]
