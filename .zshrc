@@ -1,5 +1,3 @@
-clear && neofetch
-
 alias rb="sudo nixos-rebuild switch --flake $HOME/nixos#angel"
 alias dot="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias nv="nvim"
@@ -32,6 +30,7 @@ function y() {
   rm -f -- "$tmp"
 }
 
-source <(fzf --zsh)
+c
+
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
