@@ -24,6 +24,8 @@ function d() {
   builtin cd $(find . -type d | fzf --scheme=path)
 }
 
+alias dnv="d; nvim"
+
 function f() {
   $@ $(fzf)
 }
