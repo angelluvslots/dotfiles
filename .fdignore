@@ -1,0 +1,11 @@
+.cache
+*cache*
+*Cache*
+.local
+.var
+.dotfiles
+.rustup
+.cargo
+.zen/angel/storage
+.mozilla
+fl-studio-bottle
