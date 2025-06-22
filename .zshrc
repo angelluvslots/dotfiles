@@ -1,16 +1,21 @@
 alias rb="sudo nixos-rebuild switch --flake $HOME/nixos#angel"
 alias dot="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-alias nv="nvim"
-alias fnv="nv \$(fzf)"
-alias c="clear && neofetch"
-alias zf="z \$(zoxide query -l | fzf)"
-alias zfc="zf && c"
 alias ls="ls -a"
 alias sp="spotify_player"
 alias we="watchexec -c clear"
 
-function zc() {
-  z $1 && c
+function nv() {
+  nvim $@
+}
+
+function c() {
+  clear
+  neofetch
+  $@
+}
+
+function f() {
+  $@ $(fzf)
 }
 
 function mxlrc() {
@@ -33,4 +38,3 @@ function y() {
 c
 
 eval "$(starship init zsh)"
-eval "$(zoxide init zsh)"
