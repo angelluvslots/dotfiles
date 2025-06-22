@@ -44,6 +44,7 @@ in
   };
 
   environment.systemPackages = with pkgs; [
+    # Apps
     ghostty
     obsidian
     discord
@@ -55,6 +56,7 @@ in
     # spotify
 
     # Cli
+    spotify-player
     fzf
     neofetch
     ripgrep
@@ -72,8 +74,6 @@ in
     nvtopPackages.nvidia
     ffmpeg
     lshw
-
-    # Misc
     steam-run
     p7zip
     unzip
