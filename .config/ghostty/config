@@ -2,7 +2,7 @@ command = tmux a || tmux new
 
 confirm-close-surface = false
 
-font-family = "JetBrainsMonoNF Nerd Font Propo"
+font-family = "JetBrainsMonoNL NFP"
 font-size = 20
 window-inherit-font-size = false
 
