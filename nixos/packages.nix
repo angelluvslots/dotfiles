@@ -54,45 +54,39 @@ in
     # Added automatically by spicetify
     # spotify
 
-    # Steam
-
     # Cli
-    steam-run
-    git
-    github-cli
+    fzf
+    neofetch
+    ripgrep
     jq
-    fish
     starship
     tmux
     fd
     neovim
     yazi
     zsh
-    gnumake
     du-dust
     cava
     bat
-    nushell
-    watchexec
-    p7zip
-    unzip
-    valgrind
-    wget
     htop
     nvtopPackages.nvidia
     ffmpeg
-    # i wish i didn't have to install this *spits cmake because it fucking
-    # sucks, fuck you cmake*
+    lshw
+
+    # Misc
+    steam-run
+    p7zip
+    unzip
+
+    # Dev
+    git
+    github-cli
+    gnumake
+    watchexec
+    valgrind
     cmake
     meson
     pkg-config
-    wl-clipboard
-    wtype
-    zoxide
-    ripgrep
-    fzf
-    neofetch
-    lshw
 
     # Language
     gleam
@@ -106,6 +100,7 @@ in
     python312Packages.pip
 
     # Hyprland
+    wl-clipboard
     kitty
     waybar
     hyprpaper
