@@ -1,5 +1,5 @@
 {
-    "layer": "top",
+    "layer": "bottom",
     "modules-left": ["hyprland/workspaces", "battery", "pulseaudio"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["cava", "temperature", "clock"],
